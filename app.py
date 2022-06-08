@@ -13,7 +13,8 @@ def index():
 #0x00001000 - This makes the popup appear over the browser window
 @app.route('/test')
 def test():
-    return render_template('index.html',text='You have just run a python script on the button press!')
+    print('You have just run a python script on the button press!')
+    return("successful run")
 
 if __name__ == "__main__":
     app.run(debug=True)
